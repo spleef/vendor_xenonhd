@@ -18,4 +18,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 otaupdater.otaid=XenonHD_ROM \
 otaupdater.otaversion=$(shell date +"%Y%m%d") \
 otaupdater.otatime=$(shell date +"%Y%m%d-%H%M") \
-#otaupdater.noflash=1
