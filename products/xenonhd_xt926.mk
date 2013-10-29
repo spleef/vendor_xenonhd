@@ -1,7 +1,6 @@
 # Inherit AOSP device configuration for vanquish.
-$(call inherit-product, device/motorola/xt926/full_xt926.mk)
-
 $(call inherit-product, vendor/xenonhd/products/common.mk)
+$(call inherit-product, device/motorola/xt926/full_xt926.mk)
 
 # Inherit common build.prop overrides
 -include vendor/xenonhd/products/common_versions.mk
@@ -20,8 +19,7 @@ PRODUCT_COPY_FILES +=  \
     vendor/xenonhd/proprietary/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/xenonhd/proprietary/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
-#$(call inherit-product, vendor/xenonhd/configs/cdma.mk)
-#$(call inherit-product, vendor/xenonhd/configs/vzw.mk)
+$(call inherit-product, vendor/xenonhd/configs/vzw.mk)
 
 # Inherit drm blobs
 -include vendor/xenonhd/products/common_drm.mk
