@@ -1,6 +1,9 @@
 # Inherit AOSP device configuration for trltespr.
 $(call inherit-product, device/samsung/trltespr/cm.mk)
 
+# Specify phone tech before including full_phone
+    $(call inherit-product, vendor/xenonhd/configs/cdma.mk)
+
 # Inherit common product files.
 $(call inherit-product, vendor/xenonhd/products/common.mk)
 
